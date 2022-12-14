@@ -94,6 +94,7 @@ body>.container {
     box-shadow: rgb(0 0 0 / 2%) 0px 1px 2px, rgb(240 240 240) 0px 2px 3px, rgb(0 0 0 / 7%) 16px 22px 14px;
 }
 
+
 .container .wrapper .card {
     height: 30rem;
     width: 40rem;
@@ -114,6 +115,7 @@ body>.container {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+
 
 .container .wrapper .text {
     max-width: 50%;
@@ -189,4 +191,36 @@ body>.container {
     width: fit-content;
     position: absolute;
     bottom: 3rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body>.container {
+        background-image: none;
+    }
+
+    .container .wrapper {
+        min-height: 100%;
+        width: 100%;
+        border-radius: unset;
+        box-shadow: none;
+    }
+
+    .container .wrapper .card {
+        flex-direction: column;
+        width: calc(100% - 4rem);
+        height: calc(100% - 4rem);
+    }
+
+
+    .container .wrapper .canvas {
+        width: 100%;
+        min-height: 50%;
+        background-color: inherit;
+        background-image: url("img/chanel-mobile.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
 }
