@@ -169,11 +169,16 @@ body>.container {
 .container .wrapper button.addtocart {
     background-color: #3D8168;
     color: #fff;
-    height: 2.5rem;
-    width: fit-content;
-    padding: 0 2rem;
+    height: 3rem;
+    width: 90%;
+    min-width: 15rem;
+    padding-left: 10%;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
+    background-image: url(img/icon-cart.svg);
+    background-size: 1.25rem 1.25rem;
+    background-repeat: no-repeat;
+    background-position: 30% 50%;
 }
 
 
