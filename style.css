@@ -84,8 +84,8 @@ body>.container {
 }
 
 .container .wrapper {
-    min-height: 65%;
-    width: 80%;
+    min-height: 84%;
+    width: 90%;
     background-color: #F3EAE3;
     display: flex;
     justify-content: center;
@@ -173,12 +173,12 @@ body>.container {
     color: #fff;
     height: 3rem;
     width: 90%;
-    min-width: 15rem;
+    min-width: 12rem;
     padding-left: 10%;
     border: none;
     border-radius: 10px;
     background-image: url(img/icon-cart.svg);
-    background-size: 1.25rem 1.25rem;
+    font-size: calc(.5rem + .75vw);
     background-repeat: no-repeat;
     background-position: 30% 50%;
 }
@@ -187,16 +187,16 @@ body>.container {
 
 
 .attribution {
-    height: 4rem;
-    width: fit-content;
     position: absolute;
-    bottom: 3rem;
+    bottom: 1rem;
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     body>.container {
         background-image: none;
+        min-height: calc(100% + 10rem);
+        position: relative;
     }
 
     .container .wrapper {
@@ -208,19 +208,27 @@ body>.container {
 
     .container .wrapper .card {
         flex-direction: column;
-        width: calc(100% - 4rem);
+        width: calc(50% - 4rem);
+        min-width: 275px;
         height: calc(100% - 4rem);
     }
 
 
     .container .wrapper .canvas {
         width: 100%;
-        min-height: 50%;
+        height: 13rem;
         background-color: inherit;
-        background-image: url("img/chanel-mobile.png");
+        background-image: url(img/chanel-mobile.png);
         background-size: cover;
         background-repeat: no-repeat;
+        border-radius: 0;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+    }
+
+    .container .wrapper .text {
+        max-width: 100%;
+        max-height: 50%;
+        padding: 2rem;
     }
 }
