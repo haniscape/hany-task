@@ -214,7 +214,7 @@ body>.container {
         padding: 1rem;
     }
 
-    
+
     .container .wrapper .card {
         flex-direction: column;
         width: calc(50% - 4rem);
@@ -241,7 +241,36 @@ body>.container {
         max-height: 50%;
         padding: 2rem;
     }
+
     .container .wrapper button.addtocart {
         width: 100%;
+    }
+}
+
+
+
+/* Mobile View break point */
+@media only screen and (max-width: 375px) {
+    body>.container {
+        min-height: 100%;
+    }
+
+    .container .wrapper {
+        padding: 0;
+    }
+
+    .container .wrapper .card {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .container .wrapper .canvas {
+        border-radius: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .attribution {
+        display: none;
     }
 }
